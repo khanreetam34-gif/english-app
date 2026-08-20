@@ -1,0 +1,40 @@
+name: Extract V41 Project
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract V41 ZIP
+        run: |
+          ZIP=$(find . -maxdepth 1 -type f -name '*.zip' | head -n 1)
+
+          if [ -z "$ZIP" ]; then
+            echo "No V41 ZIP file found."
+            exit 1
+          fi
+
+          mkdir -p _v41_extract
+          unzip -o "$ZIP" -d _v41_extract
+
+          cp -a _v41_extract/. .
+          rm -rf _v41_extract
+          rm -f "$ZIP"
+
+      - name: Commit extracted project
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git diff --cached --quiet || git commit -m "Extract V41 project"
+          git push
