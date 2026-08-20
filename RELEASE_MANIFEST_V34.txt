@@ -1,0 +1,25 @@
+English Rebuild v34
+===================
+Target: Android / supported cloud Android environments
+Language: English
+Build type: Debug APK project
+
+Implemented:
+- English UI/navigation
+- Settings/HUD persistence
+- Runtime logs + refresh/clear/export
+- Diagnostics + App Health Check
+- Local English OCR
+- Script file selection/inspection
+- Feature Status registry
+- Settings export
+- Local event counter
+
+Not included:
+- Original proprietary/native runtime
+- Original private backend
+- Execution of recovered proprietary scripts
+- Separate cloud-phone service
+
+Release prerequisite:
+Android Studio + Android SDK + Gradle sync + successful APK build + cloud Android smoke test.

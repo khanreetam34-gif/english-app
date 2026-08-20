@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.example.englishrebuild'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.example.englishrebuild'
+        minSdk 23
+        targetSdk 35
+        versionCode 13
+        versionName '1.0.13'
+    }
+}
+
+dependencies { implementation 'com.google.mlkit:text-recognition:16.0.1' }

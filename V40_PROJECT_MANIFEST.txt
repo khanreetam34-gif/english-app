@@ -1,0 +1,10 @@
+OK | settings.gradle | 273 bytes
+OK | build.gradle | 73 bytes
+OK | app/build.gradle | 358 bytes
+OK | app/src/main/AndroidManifest.xml | 556 bytes
+OK | app/src/main/java/com/example/englishrebuild/MainActivity.java | 19640 bytes
+OK | app/src/main/java/com/example/englishrebuild/OcrEngine.java | 1162 bytes
+OK | app/src/main/java/com/example/englishrebuild/FeatureRegistry.java | 728 bytes
+OK | app/src/main/java/com/example/englishrebuild/Diagnostics.java | 828 bytes
+OK | app/src/main/java/com/example/englishrebuild/ScriptService.java | 620 bytes
+OK | app/src/main/java/com/example/englishrebuild/AssetService.java | 1040 bytes

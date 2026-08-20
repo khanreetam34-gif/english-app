@@ -1,0 +1,56 @@
+{
+  "language": "English",
+  "target": "Normal Android APK; compatible with supported cloud Android phones",
+  "screens": {
+    "Main": [
+      "Status",
+      "HUD",
+      "Script Manager",
+      "OCR / Image",
+      "Web Interface"
+    ],
+    "Settings": [
+      "Language",
+      "Notifications",
+      "Floating Window",
+      "Auto Start",
+      "Save Settings"
+    ],
+    "Logs": [
+      "Runtime Log",
+      "Clear Logs"
+    ],
+    "Update": [
+      "Version",
+      "Update Status",
+      "Check for Updates",
+      "Download and Install"
+    ],
+    "HUD": [
+      "Visible",
+      "Transparency",
+      "Size",
+      "Overlay Permission"
+    ],
+    "Scripts": [
+      "Lua Runtime",
+      "Script File Picker",
+      "Authorized Run"
+    ],
+    "OCR": [
+      "English OCR",
+      "Image Picker",
+      "Process Image"
+    ],
+    "Web": [
+      "API Endpoint",
+      "WebSocket Endpoint",
+      "Connect"
+    ],
+    "About": [
+      "Version",
+      "Language",
+      "Build"
+    ]
+  }
+}

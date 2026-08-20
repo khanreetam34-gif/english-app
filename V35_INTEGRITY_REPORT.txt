@@ -1,0 +1,21 @@
+English Rebuild v35 integrity scan
+
+PASS  settings.gradle
+PASS  build.gradle
+PASS  app/build.gradle
+PASS  app/src/main/AndroidManifest.xml
+PASS  app/src/main/java/com/example/englishrebuild/MainActivity.java
+PASS  app/src/main/java/com/example/englishrebuild/OcrEngine.java
+PASS  app/src/main/java/com/example/englishrebuild/FeatureRegistry.java
+PASS  app/src/main/java/com/example/englishrebuild/Diagnostics.java
+PASS  app/src/main/java/com/example/englishrebuild/ScriptService.java
+PASS  app/src/main/java/com/example/englishrebuild/AssetService.java
+PASS  Diagnostics.java  braces=3/3 parentheses=14/14
+PASS  FeatureController.java  braces=10/10 parentheses=33/33
+PASS  OcrService.java  braces=5/5 parentheses=7/7
+PASS  ScriptService.java  braces=6/6 parentheses=10/10
+PASS  FeatureRegistry.java  braces=3/3 parentheses=13/13
+PASS  OcrEngine.java  braces=7/7 parentheses=17/17
+PASS  AssetService.java  braces=10/10 parentheses=24/24
+PASS  AppState.java  braces=2/2 parentheses=1/1
+PASS  MainActivity.java  braces=63/63 parentheses=492/492

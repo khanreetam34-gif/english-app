@@ -1,0 +1,33 @@
+<resources>
+<string name="app_name">English Rebuild</string>
+<string name="main">Main</string>
+<string name="settings">Settings</string>
+<string name="logs">Logs</string>
+<string name="update">Update</string>
+<string name="hud">HUD</string>
+<string name="scripts">Scripts</string>
+<string name="ocr">OCR / Image</string>
+<string name="web">Web Interface</string>
+<string name="about">About</string>
+<string name="ready">Ready</string>
+<string name="english_interface">English interface enabled</string>
+<string name="language">Language</string>
+<string name="notifications">Notifications</string>
+<string name="floating_window">Floating Window</string>
+<string name="auto_start">Auto Start</string>
+<string name="save_settings">Save Settings</string>
+<string name="clear_logs">Clear Logs</string>
+<string name="check_updates">Check for Updates</string>
+<string name="download_install">Download and Install</string>
+<string name="hud_visible">HUD Visible</string>
+<string name="transparency">Transparency</string>
+<string name="size">Size</string>
+<string name="choose_script">Choose Script File</string>
+<string name="run_authorized_script">Run Authorized Script</string>
+<string name="choose_image">Choose Image</string>
+<string name="process_image">Process Image</string>
+<string name="api_endpoint">API Endpoint</string>
+<string name="websocket_endpoint">WebSocket Endpoint</string>
+<string name="connect">Connect</string>
+<string name="about_text">English rebuild of the supplied application reference.</string>
+</resources>

@@ -1,0 +1,9 @@
+Core Java files:
+- AppState.java
+- AssetService.java
+- Diagnostics.java
+- FeatureController.java
+- MainActivity.java
+- OcrEngine.java
+- OcrService.java
+- ScriptService.java

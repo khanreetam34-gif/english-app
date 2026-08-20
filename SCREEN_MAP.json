@@ -1,0 +1,79 @@
+{
+  "main": {
+    "title": "Main",
+    "components": [
+      "status",
+      "HUD",
+      "Script Manager",
+      "OCR / Image",
+      "Web Interface"
+    ]
+  },
+  "settings": {
+    "title": "Settings",
+    "components": [
+      "Language",
+      "Notifications",
+      "Floating Window",
+      "Auto Start",
+      "Save Settings"
+    ]
+  },
+  "logs": {
+    "title": "Logs",
+    "components": [
+      "Runtime Log",
+      "Clear Logs"
+    ]
+  },
+  "update": {
+    "title": "Update",
+    "components": [
+      "Current Version",
+      "Update Status",
+      "Check for Updates",
+      "Download and Install"
+    ]
+  },
+  "hud": {
+    "title": "HUD",
+    "components": [
+      "HUD Visible",
+      "Transparency",
+      "Size",
+      "Overlay Permission"
+    ]
+  },
+  "scripts": {
+    "title": "Scripts",
+    "components": [
+      "Lua Runtime",
+      "Choose Script File",
+      "Run Authorized Script"
+    ]
+  },
+  "ocr": {
+    "title": "OCR / Image",
+    "components": [
+      "English OCR",
+      "Choose Image",
+      "Process Image"
+    ]
+  },
+  "web": {
+    "title": "Web Interface",
+    "components": [
+      "API Endpoint",
+      "WebSocket Endpoint",
+      "Connect"
+    ]
+  },
+  "about": {
+    "title": "About",
+    "components": [
+      "Version",
+      "Language",
+      "Build"
+    ]
+  }
+}
