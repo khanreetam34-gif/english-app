@@ -1,14 +1,13 @@
 name: Extract V41 Project
 
-on:
-  workflow_dispatch:
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
 
 jobs:
   extract:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -16,19 +15,21 @@ jobs:
 
       - name: Extract V41 ZIP
         run: |
-          ZIP=$(find . -maxdepth 1 -type f -name '*.zip' | head -n 1)
+          mkdir -p /tmp/v41
+          unzip -o "English_Rebuild_v41_phone_build.zip" -d /tmp/v41
 
-          if [ -z "$ZIP" ]; then
-            echo "No V41 ZIP file found."
-            exit 1
-          fi
+      - name: Copy V41 project files
+        run: |
+          rsync -av --exclude='.github/' /tmp/v41/ ./
 
-          mkdir -p _v41_extract
-          unzip -o "$ZIP" -d _v41_extract
+      - name: Remove ZIP
+        run: |
+          rm -f "English_Rebuild_v41_phone_build.zip"
 
-          cp -a _v41_extract/. .
-          rm -rf _v41_extract
-          rm -f "$ZIP"
+      - name: Show extracted files
+        run: |
+          echo "===== V41 PROJECT ====="
+          find . -maxdepth 3 -type f | sort | head -200
 
       - name: Commit extracted project
         run: |
@@ -36,5 +37,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-          git diff --cached --quiet || git commit -m "Extract V41 project"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Extract V41 English project"
+            git push
+          fi
